@@ -5,11 +5,53 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>HTML-Page</title>
+      <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Molle:400i|Roboto" rel="stylesheet">
         <link rel="stylesheet" href="./main.css">
     </head>
     <body>
-    <a target="_blank" href="https://google.com">
-        <h1>Google</h1>
-    </a>
+      <img src="./fma.jpg" alt="fullmetal alchemist">
+      <section>
+        <h1>Lindsey Perkins</h1><!-- remove space
+        --><ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="Transmute" type="button">Transmute</button>
+      </section>
+
+
+<section id="about" class="purple-title">
+  <h2>About</h2>
+  <hr>
+</section>
+
+<section id="portfolio" class="purple-title">
+  <h2>Portfolio</h2>
+  <hr>
+</section>
+
+<section id="resume">
+  <h2>Resume</h2>
+  <hr>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <hr>
+</section>
+
+<script type="text/javascript">
+  var x = document.querySelectorAll("li a");
+  var blueButton = document.getElementById("Transmute");
+  blueButton.addEventListener("click", function() {
+    x[0].classList.add("yellow-button");
+    x[1].classList.add("yellow-button");
+    x[2].classList.add("yellow-button");
+    x[3].classList.add("yellow-button");
+  });
+</script>
+
     </body>
 </html>
